@@ -31,6 +31,12 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+
+        .custom-input {
+            background-image: url('/images/search-icon.svg');
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
     </style>
 
 </head>
@@ -38,41 +44,43 @@
 <body class="font-lato">
     <header class="container mx-auto">
         <!-- nav bar -->
-        <nav class="shadow-2xl lg:my-8">
-            <div class="navbar bg-base-100">
+        <nav class="md:shadow-2xl lg:my-8  md:bg-[#F85559] rounded-full md:p-8">
+            <div class="navbar  ">
                 <div class="navbar-start hidden md:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 3</a></li>
+                    <ul class="menu menu-horizontal px-1 text-lg text-[#FFF] font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+
                     </ul>
                 </div>
-                <div class="navber-end md:navbar-center flex w-full md:w-0">
-                    <div class="dropdown flex-1">
+                <div class="navber-end md:navbar-center flex w-full md:w-0 flex-row-reverse md:flex-row">
+                    <div class="dropdown dropdown-end lg:flex-1">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+                            <img src="/images/mobile-device.svg" alt="">
                         </label>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 3</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+
                         </ul>
                     </div>
-                    <div>
-                        <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <div class="flex  flex-1">
+                        <img src="/images/logo.png" alt="">
+                        <a
+                            class="btn btn-ghost normal-case text-xl md:text-4xl font-bold text-[#121212] md:text-[#FFF]">Fruit
+                            Burst</a>
                     </div>
                 </div>
-                <div class="navbar-end hidden lg:flex">
-                    <a class="btn">Button</a>
+                <div class="navbar-end hidden md:flex">
+                    <div class="form-control  ">
+                        <input type="text" placeholder="Search here"
+                            class="input custom-input input-bordered w-24 h-14 xl:w-[300px] rounded-full ">
+                    </div>
                 </div>
             </div>
         </nav>
