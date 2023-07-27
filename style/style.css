@@ -1,0 +1,12 @@
+ /* google font */
+ .font-lato {
+     font-family: 'Lato', sans-serif;
+ }
+
+ /* search icon in input feild */
+ .custom-input {
+     padding-right: 15px;
+     background-image: url(images/search.png);
+     background-repeat: no-repeat;
+     background-position: right 10px center;
+ }
